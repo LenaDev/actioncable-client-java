@@ -104,4 +104,9 @@ public class Consumer {
     /*package*/ Connection getConnection() {
         return connection;
     }
+
+
+    public boolean isConnected() {
+        return connection.isOpen();
+    }
 }
