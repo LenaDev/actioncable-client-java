@@ -107,6 +107,6 @@ public class Consumer {
 
 
     public boolean isConnected() {
-        return connection.isOpen();
+        return connection != null && connection.isOpen();
     }
 }
